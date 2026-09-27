@@ -1,622 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ansh Robotics Lab - Robotics, AI, electronics, drones and experimental technology projects.">
-    <title>Ansh Robotics Lab | Build. Experiment. Innovate.</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div class="background-grid"></div>
-    <div class="scan-line"></div>
-
-    <!-- NAVIGATION -->
-    <header class="navbar">
-        <a href="#home" class="logo">
-            <span class="logo-icon">⚡</span>
-            <span>ANSH<span class="logo-accent">ROBOTICS</span></span>
-        </a>
-
-        <nav id="navMenu">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#experiments">Experiments</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#about">About</a>
-        </nav>
-
-        <button class="menu-button" id="menuButton" aria-label="Open menu">
-            ☰
-        </button>
-    </header>
-
-    <!-- HERO -->
-    <main>
-
-        <section class="hero" id="home">
-
-            <div class="hero-content">
-
-                <div class="status">
-                    <span class="status-dot"></span>
-                    ROBOTICS LAB ONLINE
-                </div>
-
-                <p class="small-title">WELCOME TO</p>
-
-                <h1>
-                    ANSH
-                    <span>ROBOTICS LAB</span>
-                </h1>
-
-                <p class="hero-description">
-                    Building robots, drones, AI systems and experimental technology.
-                    This is where ideas become machines.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="primary-button">
-                        EXPLORE PROJECTS
-                        <span>→</span>
-                    </a>
-
-                    <a href="#about" class="secondary-button">
-                        ENTER THE LAB
-                    </a>
-                </div>
-
-                <div class="hero-stats">
-                    <div>
-                        <strong id="projectCount">06</strong>
-                        <span>PROJECTS</span>
-                    </div>
-
-                    <div>
-                        <strong>∞</strong>
-                        <span>IDEAS</span>
-                    </div>
-
-                    <div>
-                        <strong>24/7</strong>
-                        <span>EXPERIMENTING</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="hero-visual">
-
-                <div class="orbital-system">
-
-                    <div class="orbit orbit-one"></div>
-                    <div class="orbit orbit-two"></div>
-                    <div class="orbit orbit-three"></div>
-
-                    <div class="robot-core">
-                        <div class="core-ring">
-                            <div class="core-center">ARL</div>
-                        </div>
-                    </div>
-
-                    <div class="floating-chip chip-one">ESP32</div>
-                    <div class="floating-chip chip-two">AI</div>
-                    <div class="floating-chip chip-three">ROBOTICS</div>
-                    <div class="floating-chip chip-four">DRONE</div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- MARQUEE -->
-        <section class="tech-strip">
-            <div class="marquee">
-                <span>ESP32</span>
-                <b>•</b>
-                <span>ARDUINO</span>
-                <b>•</b>
-                <span>PYTHON</span>
-                <b>•</b>
-                <span>C++</span>
-                <b>•</b>
-                <span>ARTIFICIAL INTELLIGENCE</span>
-                <b>•</b>
-                <span>ROBOTICS</span>
-                <b>•</b>
-                <span>ELECTRONICS</span>
-                <b>•</b>
-                <span>ESP32</span>
-                <b>•</b>
-                <span>ARDUINO</span>
-            </div>
-        </section>
-
-        <!-- PROJECTS -->
-        <section class="section" id="projects">
-
-            <div class="section-heading">
-                <div>
-                    <p class="section-label">01 / PROJECT DATABASE</p>
-                    <h2>Featured <span>Projects</span></h2>
-                </div>
-
-                <p class="section-description">
-                    Machines, software and experiments built inside Ansh Robotics Lab.
-                </p>
-            </div>
-
-            <div class="project-grid">
-
-                <article class="project-card featured-project">
-                    <div class="project-number">01</div>
-
-                    <div class="project-icon">🚁</div>
-
-                    <div class="project-content">
-                        <span class="project-category">AERIAL ROBOTICS</span>
-                        <h3>VAJRA</h3>
-                        <p>
-                            A custom quadcopter project built around ESP32-C3,
-                            BLDC motors, ESCs and MPU6050 orientation sensing.
-                        </p>
-
-                        <div class="tags">
-                            <span>ESP32-C3</span>
-                            <span>MPU6050</span>
-                            <span>BLDC</span>
-                        </div>
-                    </div>
-
-                    <a href="#" class="project-link" data-project="VAJRA Drone">
-                        VIEW PROJECT →
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-number">02</div>
-
-                    <div class="project-icon">🏙️</div>
-
-                    <div class="project-content">
-                        <span class="project-category">GAME DEVELOPMENT</span>
-                        <h3>VAJRA CITY</h3>
-                        <p>
-                            An ambitious browser-based open-world city project
-                            combining JavaScript, 3D environments and gameplay.
-                        </p>
-
-                        <div class="tags">
-                            <span>JAVASCRIPT</span>
-                            <span>WEB</span>
-                            <span>GAME</span>
-                        </div>
-                    </div>
-
-                    <a href="#" class="project-link" data-project="VAJRA CITY">
-                        VIEW PROJECT →
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-number">03</div>
-
-                    <div class="project-icon">🎮</div>
-
-                    <div class="project-content">
-                        <span class="project-category">GAME DEVELOPMENT</span>
-                        <h3>VAJRA STRIKE</h3>
-                        <p>
-                            A futuristic action game project developed with
-                            Godot and designed around missions, maps and combat.
-                        </p>
-
-                        <div class="tags">
-                            <span>GODOT</span>
-                            <span>GDSCRIPT</span>
-                            <span>3D</span>
-                        </div>
-                    </div>
-
-                    <a href="#" class="project-link" data-project="VAJRA STRIKE">
-                        VIEW PROJECT →
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-number">04</div>
-
-                    <div class="project-icon">🧠</div>
-
-                    <div class="project-content">
-                        <span class="project-category">ARTIFICIAL INTELLIGENCE</span>
-                        <h3>ANSH AI</h3>
-                        <p>
-                            A personal AI system exploring local models,
-                            Python applications and intelligent interfaces.
-                        </p>
-
-                        <div class="tags">
-                            <span>PYTHON</span>
-                            <span>AI</span>
-                            <span>OLLAMA</span>
-                        </div>
-                    </div>
-
-                    <a href="#" class="project-link" data-project="ANSH AI">
-                        VIEW PROJECT →
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-number">05</div>
-
-                    <div class="project-icon">🔧</div>
-
-                    <div class="project-content">
-                        <span class="project-category">ELECTRONICS</span>
-                        <h3>ESP32 LAB</h3>
-                        <p>
-                            Experiments with microcontrollers, sensors,
-                            Bluetooth, displays and electronic systems.
-                        </p>
-
-                        <div class="tags">
-                            <span>ESP32</span>
-                            <span>SENSORS</span>
-                            <span>BLE</span>
-                        </div>
-                    </div>
-
-                    <a href="#" class="project-link" data-project="ESP32 Lab">
-                        VIEW PROJECT →
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-number">06</div>
-
-                    <div class="project-icon">🤖</div>
-
-                    <div class="project-content">
-                        <span class="project-category">ROBOTICS</span>
-                        <h3>NEXT ROBOT</h3>
-                        <p>
-                            A future robotics platform currently in the
-                            concept and experimentation stage.
-                        </p>
-
-                        <div class="tags">
-                            <span>ROBOTICS</span>
-                            <span>AI</span>
-                            <span>CONTROL</span>
-                        </div>
-                    </div>
-
-                    <a href="#" class="project-link" data-project="Next Robot">
-                        VIEW PROJECT →
-                    </a>
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- EXPERIMENTS -->
-        <section class="section experiments-section" id="experiments">
-
-            <div class="section-heading">
-                <div>
-                    <p class="section-label">02 / EXPERIMENT CENTER</p>
-                    <h2>Lab <span>Experiments</span></h2>
-                </div>
-
-                <p class="section-description">
-                    Small experiments that become bigger inventions.
-                </p>
-            </div>
-
-            <div class="experiment-layout">
-
-                <div class="experiment-list">
-
-                    <button class="experiment-item active" data-experiment="0">
-                        <span>EXP-001</span>
-                        <strong>MPU6050 Orientation Test</strong>
-                        <small>COMPLETED</small>
-                    </button>
-
-                    <button class="experiment-item" data-experiment="1">
-                        <span>EXP-002</span>
-                        <strong>ESP32 BLE Communication</strong>
-                        <small>COMPLETED</small>
-                    </button>
-
-                    <button class="experiment-item" data-experiment="2">
-                        <span>EXP-003</span>
-                        <strong>ESC Motor Control</strong>
-                        <small>TESTING</small>
-                    </button>
-
-                    <button class="experiment-item" data-experiment="3">
-                        <span>EXP-004</span>
-                        <strong>AI Local Model Test</strong>
-                        <small>RESEARCH</small>
-                    </button>
-
-                </div>
-
-                <div class="experiment-display">
-
-                    <div class="terminal-top">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <label>ANSHLAB_TERMINAL</label>
-                    </div>
-
-                    <div class="terminal-content">
-                        <p class="terminal-command">$ lab.status()</p>
-
-                        <h3 id="experimentTitle">
-                            MPU6050 Orientation Test
-                        </h3>
-
-                        <p id="experimentText">
-                            Testing accelerometer and gyroscope orientation
-                            data using an ESP32-C3 flight controller.
-                        </p>
-
-                        <div class="terminal-data">
-                            <div>
-                                <span>DEVICE</span>
-                                <strong id="experimentDevice">MPU6050</strong>
-                            </div>
-
-                            <div>
-                                <span>STATUS</span>
-                                <strong id="experimentStatus">COMPLETED</strong>
-                            </div>
-
-                            <div>
-                                <span>RESULT</span>
-                                <strong id="experimentResult">SUCCESS</strong>
-                            </div>
-                        </div>
-
-                        <p class="terminal-line">
-                            <span class="terminal-green">SYSTEM:</span>
-                            experiment data recorded successfully.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- GALLERY -->
-        <section class="section" id="gallery">
-
-            <div class="section-heading">
-                <div>
-                    <p class="section-label">03 / VISUAL ARCHIVE</p>
-                    <h2>Lab <span>Gallery</span></h2>
-                </div>
-
-                <p class="section-description">
-                    Add your real robotics photos, builds and experiments here.
-                </p>
-            </div>
-
-            <div class="gallery-grid">
-
-                <div class="gallery-card gallery-large">
-                    <div class="gallery-placeholder">
-                        <span>🚁</span>
-                        <p>VAJRA BUILD</p>
-                    </div>
-                </div>
-
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <span>🔌</span>
-                        <p>ELECTRONICS</p>
-                    </div>
-                </div>
-
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <span>🤖</span>
-                        <p>ROBOTICS</p>
-                    </div>
-                </div>
-
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <span>🧪</span>
-                        <p>EXPERIMENTS</p>
-                    </div>
-                </div>
-
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <span>💻</span>
-                        <p>CODING LAB</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- TECHNOLOGY -->
-        <section class="section technology-section">
-
-            <div class="section-heading">
-                <div>
-                    <p class="section-label">04 / TECHNOLOGY STACK</p>
-                    <h2>Tools of the <span>Lab</span></h2>
-                </div>
-            </div>
-
-            <div class="technology-grid">
-
-                <div class="technology-card">
-                    <strong>ESP32</strong>
-                    <span>MICROCONTROLLERS</span>
-                </div>
-
-                <div class="technology-card">
-                    <strong>Arduino</strong>
-                    <span>ELECTRONICS</span>
-                </div>
-
-                <div class="technology-card">
-                    <strong>C++</strong>
-                    <span>EMBEDDED CODE</span>
-                </div>
-
-                <div class="technology-card">
-                    <strong>Python</strong>
-                    <span>AI & SOFTWARE</span>
-                </div>
-
-                <div class="technology-card">
-                    <strong>JavaScript</strong>
-                    <span>WEB DEVELOPMENT</span>
-                </div>
-
-                <div class="technology-card">
-                    <strong>Godot</strong>
-                    <span>GAME DEVELOPMENT</span>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ABOUT -->
-        <section class="section about-section" id="about">
-
-            <div class="about-box">
-
-                <div class="about-left">
-                    <p class="section-label">05 / THE CREATOR</p>
-
-                    <h2>
-                        MEET
-                        <span>ANSH</span>
-                    </h2>
-
-                    <div class="creator-badge">
-                        <span class="status-dot"></span>
-                        YOUNG INVENTOR
-                    </div>
-                </div>
-
-                <div class="about-right">
-
-                    <p>
-                        Welcome to my robotics laboratory. I love building
-                        things, experimenting with electronics, programming
-                        computers and exploring artificial intelligence.
-                    </p>
-
-                    <p>
-                        Every project starts with an idea. I turn that idea
-                        into circuits, code, machines and experiments.
-                    </p>
-
-                    <div class="quote">
-                        <span>"</span>
-                        BUILD. EXPERIMENT. INNOVATE.
-                        <span>"</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- CONTACT -->
-        <section class="contact-section" id="contact">
-
-            <div class="contact-content">
-
-                <p class="section-label">06 / CONNECT</p>
-
-                <h2>LET'S BUILD<br><span>THE FUTURE.</span></h2>
-
-                <p>
-                    Follow the projects and experiments from Ansh Robotics Lab.
-                </p>
-
-                <div class="contact-buttons">
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                        GITHUB ↗
-                    </a>
-
-                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-                        YOUTUBE ↗
-                    </a>
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-logo">
-            ⚡ ANSH ROBOTICS LAB
+<!-- YOUTUBE VIDEOS -->
+<section class="section youtube-section" id="videos">
+
+    <div class="section-heading">
+        <div>
+            <p class="section-label">04 / VIDEO ARCHIVE</p>
+            <h2>My <span>YouTube Videos</span></h2>
         </div>
 
-        <p>
-            BUILD • EXPERIMENT • INNOVATE
+        <p class="section-description">
+            Watch my robotics projects, inventions, experiments
+            and technology videos.
         </p>
+    </div>
 
-        <span>
-            © <span id="year"></span> Ansh Robotics Lab
-        </span>
+    <div class="youtube-channel">
 
-    </footer>
+        <div class="youtube-channel-icon">▶</div>
 
-    <!-- PROJECT MODAL -->
-    <div class="modal" id="projectModal">
+        <div class="youtube-channel-info">
+            <h3>Ansh's Innovation Lab</h3>
+            <p>@AnshsInnovationLab</p>
+            <span>ROBOTICS • TECHNOLOGY • INNOVATION</span>
+        </div>
 
-        <div class="modal-box">
+        <a
+            class="youtube-subscribe"
+            href="https://www.youtube.com/@AnshsInnovationLab?sub_confirmation=1"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            SUBSCRIBE ↗
+        </a>
 
-            <button class="modal-close" id="modalClose">
-                ×
-            </button>
+    </div>
 
-            <p class="section-label">PROJECT DATABASE</p>
+    <div class="youtube-video-grid">
 
-            <h2 id="modalTitle">VAJRA Drone</h2>
-
-            <p id="modalText">
-                Project information will be added here.
-            </p>
-
-            <div class="modal-status">
-                <span class="status-dot"></span>
-                PROJECT RECORD LOADED
+        <!-- VIDEO 1 -->
+        <div class="youtube-video-card">
+            <div class="youtube-video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed?listType=user_uploads&list=AnshsInnovationLab"
+                    title="Ansh's Innovation Lab YouTube videos"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
             </div>
 
+            <div class="youtube-video-info">
+                <span>YOUTUBE CHANNEL</span>
+                <h3>Watch My Latest Videos</h3>
+                <p>Explore videos from my YouTube channel.</p>
+            </div>
+        </div>
+
+        <!-- CHANNEL PREVIEW -->
+        <div class="youtube-feature-card">
+            <div class="youtube-feature-icon">📡</div>
+
+            <p class="section-label">CHANNEL ACCESS</p>
+
+            <h3>Explore the<br><span>Innovation Lab</span></h3>
+
+            <p>
+                Visit my YouTube channel to discover my
+                latest uploads, robotics builds and experiments.
+            </p>
+
+            <a
+                href="https://www.youtube.com/@AnshsInnovationLab/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="youtube-watch-button"
+            >
+                WATCH ON YOUTUBE →
+            </a>
         </div>
 
     </div>
 
-    <script src="script.js"></script>
-
-</body>
-</html>
+</section>
